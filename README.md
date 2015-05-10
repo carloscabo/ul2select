@@ -3,7 +3,7 @@ JQuery plugin that converts &lt;ul> list into &lt;select> and back.
 
 ## Demo
 
-Take a (look to the demo)[https://rawgit.com/carloscabo/ul2select/master/index.html], and you will understand how it works.
+Take a [look to the demo](https://rawgit.com/carloscabo/ul2select/master/index.html), and you will understand how it works.
 
 ## Requirements
 
