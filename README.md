@@ -1,5 +1,5 @@
 # ul2select
-JQuery plugin that converts &lt;ul> list into &lt;select> and back.
+JQuery plugin that converts *&lt;ul>* list into *&lt;select>* and back.
 
 ## Demo
 
@@ -64,7 +64,7 @@ If you want a "plain select", without wrapper, span... etc
       select_wrapper: null
     });
 
-## Custom events on the resulting <select>
+## Custom events
 
 Probably you'll find yourself in situations where you need to add a custom event on the resulting `<select>`, to be fired on `change`... `focus`... etc. This can also done when initiating `ul2select`.
 
