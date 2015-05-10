@@ -1,10 +1,10 @@
 # JQuery ul2select
 
-JQuery plugin that converts `<ul>` list into `<select>` and back.
+JQuery plugin that converts `<ul>` list into a `<select>` (and back).
 
 ## Demo
 
-Take a [look to the demo](https://rawgit.com/carloscabo/ul2select/master/index.html), and you will understand how it works.
+Take a [look to the demo](https://rawgit.com/carloscabo/ul2select/master/index.html), and you will understand what we are talking about.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ The function will replace the original `<ul>`:
       ...
     </ul>
 
-With a `<select>` with this structure:
+With a `<select>` with this default structure:
 
     <div class="u2s-wrapper">
       <span class="u2s-current">Currently selected option</span>
@@ -41,7 +41,7 @@ With a `<select>` with this structure:
 
 By default `ul2select` will wrap the resulting `<select>` with an `<div class="u2s-wrapper">` and will add an additional `<span>` to ease the CSS styling of custom selects. The `<span>` content will be automatically updated on changing the `<select>` option.
 
-It also maps the currently selected option in the list to the corresponding option in the select (and back when you "revert", see below).
+It also **maps the currently selected option in the list** to the **corresponding option in the select** (and back when you "revert", see the "revert" feature below).
 
 It handles also multilevel `<ul>` indenting the `<select>` options with 3 spaces.
 
@@ -53,13 +53,14 @@ You have several customizable options:
 
     $('.my-class').ul2select({
       // Class used in the <li> to mark active option
-      // By default "active"
+      // default is "active"
       active_class: 'selected',
       // Custom wrapper around the select
+      // default: <div class="u2s-wrapper">
       select_wrapper: '<div id="my-custom-wrapper">'
     });
 
-If you want a "plain select", without wrapper, span... etc
+If you want a **"plain select"**, without wrapper, span... etc
 
     $('.my-class').ul2select({
       // Do not add wrapper and span
@@ -68,7 +69,7 @@ If you want a "plain select", without wrapper, span... etc
 
 ## Custom events
 
-Probably you'll find yourself in situations where you need to add a custom event on the resulting `<select>`, to be fired on `change`... `focus`... etc. This can also done when initializing `ul2select`.
+Probably you'll find yourself in situations where you need to add a custom event on the resulting `<select>`, to be fired on `change`... `focus`... etc. This can also be done when initializing `ul2select`.
 
     $('.u2s-fake-select.sample-1').ul2select({
       custom_events: {
