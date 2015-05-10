@@ -1,6 +1,8 @@
 /**
- * ul2select
- * Converts an UL list into a SELECT
+ * jquery.ul2select
+ * Converts an UL list into a SELECT (and back)
+ * by Carlos Cabo
+ * https://github.com/carloscabo/ul2select
 */
 ;(function($) {
 
