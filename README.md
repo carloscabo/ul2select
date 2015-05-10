@@ -1,6 +1,6 @@
 # JQuery ul2select
 
-JQuery plugin that converts **&lt;ul>** list into **&lt;select>** and back.
+JQuery plugin that converts `<ul>` list into `<select>` and back.
 
 ## Demo
 
@@ -39,7 +39,7 @@ With a `<select>` with this structure:
 
 ## Default functionallity
 
-By default `ul2select` will wrap the resulting `<select>` with an `<div class="u2s-wrapper">` and will add an additional `<span>` to ease the CSS styling of custom selects.
+By default `ul2select` will wrap the resulting `<select>` with an `<div class="u2s-wrapper">` and will add an additional `<span>` to ease the CSS styling of custom selects. The `<span>` content will be automatically updated on changing the `<select>` option.
 
 It also maps the currently selected option in the list to the corresponding option in the select (and back when you "revert", see below).
 
