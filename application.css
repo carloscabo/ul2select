@@ -1,0 +1,49 @@
+body {
+  padding: 20px;
+}
+
+div.box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+div.wide {
+  width: 100%;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li.active > a,
+li.selected > a {
+  color: red;
+}
+
+.u2s-wrapper {
+  position: relative;
+  background: pink url(icon-arrow-down-24.png) right center no-repeat;
+  padding: 4px 24px 4px 4px;
+  cursor: pointer;
+}
+
+#my-custom-wrapper {
+  position: relative;
+  background: cyan url(icon-arrow-down-24.png) right center no-repeat;
+  padding: 8px 24px 8px 8px;
+  cursor: pointer;
+}
+
+#my-custom-wrapper select,
+.u2s-wrapper select {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+

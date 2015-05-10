@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Fast &amp; Dirty Template</title>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"/>
+  <link rel="stylesheet" href="application.css"/>
+
+</head>
+<body class="op" id="www_dominio_com">
+
+<div class="box">
+  <p>
+    <b>Sample 1</b>
+  </p>
+  <ul class="u2s-fake-select sample-1" data-custom="sample-custom-data-to-be-copied">
+    <li><a href="/1">home</a></li>
+    <li><a href="/2">lorem ipsum</a></li>
+    <li class="active"><a href="/3">dolor sit amet</a></li>
+    <li><a href="/4">consectetur adipisicing elit</a></li>
+    <li><a href="/5">Accusamus a voluptatibus</a>
+      <ul>
+        <li><a href="/6">quaerat assumenda</a></li>
+        <li><a href="/7">tempore!</a></li>
+        <li>Error quo provident
+          <ul>
+            <li><a href="/8">Error quo provident</a></li>
+            <li><a href="/9">ut consectetur</a></li>
+            <li><a href="/10">ipsa?</a></li>
+          </ul>
+        </li>
+        <li><a href="/9">ut consectetur</a></li>
+      </ul>
+    </li>
+    <li><a href="/10">ipsa?</a></li>
+  </ul>
+
+  <br><br>
+  <a href="#" class="convert-sample-1">Convert UL to SELECT</a>
+</div>
+
+<div class="box">
+  <p>
+    <b>Sample 2</b><br>
+    With custom wrapper and active class
+  </p>
+  <ul class="u2s-fake-select sample-2">
+    <li><a href="/1">home</a></li>
+    <li><a href="/2">lorem ipsum</a></li>
+    <li class="selected"><a href="/3">dolor sit amet</a></li>
+    <li><a href="/4">consectetur adipisicing elit</a></li>
+    <li><a href="/5">Accusamus a voluptatibus</a></li>
+    <li>this has no link!</li>
+    <li><a href="/7">tempore!</a></li>
+    <li><a href="/8">Error quo provident</a></li>
+    <li><a href="/9">ut consectetur</a></li>
+    <li><a href="/10">ipsa?</a></li>
+  </ul>
+
+  <br><br>
+  <a href="#" class="convert-sample-2">Convert UL to SELECT</a>
+</div>
+
+<div class="box">
+  <p>
+    <b>Sample 3</b><br>
+    Simple SELECT without wrapper
+  </p>
+  <ul class="u2s-fake-select sample-3" data-custom="sample-custom-data-copied">
+    <li><a href="/1">home</a></li>
+    <li><a href="/2">lorem ipsum</a></li>
+    <li class="active"><a href="/3">dolor sit amet</a></li>
+    <li><a href="/4">consectetur adipisicing elit</a></li>
+    <li><a href="/5">Accusamus a voluptatibus</a></li>
+    <li><a href="/6">quaerat assumenda</a></li>
+    <li><a href="/7">tempore!</a></li>
+    <li><a href="/8">Error quo provident</a></li>
+    <li><a href="/9">ut consectetur</a></li>
+    <li><a href="/10">ipsa?</a></li>
+  </ul>
+
+  <br><br>
+  <a href="#" class="convert-sample-3">Convert UL to SELECT</a>
+</div>
+
+
+<div class="box wide">
+  <p>
+    <a href="#" class="restore-samples">Revert all samples to ULs</a>
+  </p>
+</div>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="jquery.ul2select.js"></script>
+  <script src="ready.js"></script>
+</body>
+</html>
