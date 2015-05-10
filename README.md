@@ -66,7 +66,7 @@ If you want a "plain select", without wrapper, span... etc
 
 ## Custom events
 
-Probably you'll find yourself in situations where you need to add a custom event on the resulting `<select>`, to be fired on `change`... `focus`... etc. This can also done when initiating `ul2select`.
+Probably you'll find yourself in situations where you need to add a custom event on the resulting `<select>`, to be fired on `change`... `focus`... etc. This can also done when initializing `ul2select`.
 
     $('.u2s-fake-select.sample-1').ul2select({
       custom_events: {
@@ -78,7 +78,7 @@ Probably you'll find yourself in situations where you need to add a custom event
       }
     });
 
-## Revert to the original <ul>
+## Revert to the original &lt;ul>
 
 You can revert the select back to the original `<ul>` list at any time simply calling the function with the `revert` option, this way:
 
