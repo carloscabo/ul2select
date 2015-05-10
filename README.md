@@ -1,5 +1,6 @@
-# ul2select
-JQuery plugin that converts *&lt;ul>* list into *&lt;select>* and back.
+# JQuery ul2select
+
+JQuery plugin that converts **&lt;ul>** list into **&lt;select>** and back.
 
 ## Demo
 
@@ -13,6 +14,7 @@ Take a [look to the demo](https://rawgit.com/carloscabo/ul2select/master/index.h
 
 You can convert any `<ul>` into a `<select>` simply calling the `.ul2select();` function over the `<ul>` selector:
 
+    // Remenber to wait until document is ready! ;)
     $(document).ready(function() {
       $('.my-class').ul2select();
     });
@@ -80,6 +82,7 @@ Probably you'll find yourself in situations where you need to add a custom event
 
 ## Revert to the original &lt;ul>
 
-You can revert the select back to the original `<ul>` list at any time simply calling the function with the `revert` option, this way:
+You can **revert the select back to the original `<ul>`** list at any time simply calling the function with the `revert` option, this way:
 
     $('.my-class').ul2select('revert');
+
