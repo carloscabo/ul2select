@@ -8,6 +8,8 @@ $(document).ready(function() {
       custom_events: {
         'change': function(){
           console.log($(this).find('option:selected').text())
+          // Tipical navigate to section on changing select option ;)
+          // document.location.href = $(this).find('option:selected').val();
         }
       }
     });
