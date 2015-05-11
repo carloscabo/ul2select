@@ -95,3 +95,5 @@ The conversion of `<ul>` to `<select>` its widely used in responsive designs, if
 [MQBE. Media Query Breakpoint Events](https://github.com/carloscabo/MQBE)
 
 For a winning combo ;)
+
+You ha a responsive sample in [the demo](https://rawgit.com/carloscabo/ul2select/master/index.html) too.

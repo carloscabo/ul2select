@@ -30,10 +30,19 @@ $(document).ready(function() {
     });
   });
 
-  // Restore ULs
+  // Restore all ULs
   $('.restore-samples').on('click', function(e) {
     e.preventDefault();
     $('.u2s-fake-select').ul2select('revert');
   });
+
+  // Responsive sample
+  MQBE.onenter_tablet = function() {
+    $('.convert-on-mobile').ul2select();
+  };
+  MQBE.onleave_tablet = function() {
+    $('.convert-on-mobile').ul2select('revert');
+  };
+  MQBE.init();
 
 });

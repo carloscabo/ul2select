@@ -91,6 +91,35 @@
 </div>
 
 
+<div class="box">
+  <p>
+    <b>Sample 4</b><br>
+    This UL is converted automatically when you resize the browser's window below 768px width (and back when you resize to desktop), using <a href="https://github.com/carloscabo/MQBE" target="_blank">MQBE (Media Query Breakpoint Events)</a>
+  </p>
+  <ul class="convert-on-mobile">
+    <li><a href="/1">home</a></li>
+    <li><a href="/2">lorem ipsum</a></li>
+    <li class="active"><a href="/3">dolor sit amet</a></li>
+    <li><a href="/4">consectetur adipisicing elit</a></li>
+    <li><a href="/5">Accusamus a voluptatibus</a>
+      <ul>
+        <li><a href="/6">quaerat assumenda</a></li>
+        <li><a href="/7">tempore!</a></li>
+        <li>Error quo provident
+          <ul>
+            <li><a href="/8">Error quo provident</a></li>
+            <li><a href="/9">ut consectetur</a></li>
+            <li><a href="/10">ipsa?</a></li>
+          </ul>
+        </li>
+        <li><a href="/9">ut consectetur</a></li>
+      </ul>
+    </li>
+    <li><a href="/10">ipsa?</a></li>
+  </ul>
+
+</div>
+
 
 <div class="box wide">
   <p>
@@ -99,8 +128,9 @@
 </div>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="jquery.ul2select.js"></script>
-  <script src="ready.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script  type="text/javascript" src="http://rawgit.com/carloscabo/MQBE/master/public/jquery.mq_breakpoint_events.js" ></script>
+  <script type="text/javascript" src="jquery.ul2select.js"></script>
+  <script type="text/javascript" src="ready.js"></script>
 </body>
 </html>
