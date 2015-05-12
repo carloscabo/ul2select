@@ -4,7 +4,7 @@ JQuery plugin that converts `<ul>` list into a `<select>` (and back).
 
 ## Demo
 
-Take a [look to the demo](https://rawgit.com/carloscabo/ul2select/master/index.html), and you will understand what we are talking about.
+Take a [look to the demo](http://rawgit.com/carloscabo/ul2select/master/index.html), and you will understand what we are talking about.
 
 ## Requirements
 
@@ -96,4 +96,4 @@ The conversion of `<ul>` to `<select>` its widely used in responsive designs, if
 
 For a winning combo ;)
 
-You ha a responsive sample in [the demo](https://rawgit.com/carloscabo/ul2select/master/index.html) too.
+You ha a responsive sample in [the demo](http://rawgit.com/carloscabo/ul2select/master/index.html) too.
