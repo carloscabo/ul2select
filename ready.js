@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('.u2s-fake-select.sample-1').ul2select({
       custom_events: {
         'change': function(){
-          console.log($(this).find('option:selected').text())
+          console.log($(this).find('option:selected').text());
           // Tipical navigate to section on changing select option ;)
           // document.location.href = $(this).find('option:selected').val();
         }
@@ -38,13 +38,14 @@ $(document).ready(function() {
     $('.u2s-fake-select').ul2select('revert');
   });
 
-  // Responsive sample
-  MQBE.onenter_tablet = function() {
-    $('.convert-on-mobile').ul2select();
-  };
-  MQBE.onleave_tablet = function() {
-    $('.convert-on-mobile').ul2select('revert');
-  };
-  MQBE.init();
-
 });
+
+$(document)
+  .on('enter.mobile.mqbe', function() {
+    console.log('eo');
+    $('.convert-on-mobile').ul2select();
+  })
+
+  .on('leave.mobile.mqbe', function() {
+    $('.convert-on-mobile').ul2select('revert');
+  });

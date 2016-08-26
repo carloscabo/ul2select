@@ -2,27 +2,6 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
-/* MQBE */
-/* https://github.com/carloscabo/MQBE */
-@media all and (min-width:1px) {
-    body:after {
-    content: 'desktop';
-    display:none;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  body {
-    background-color: #fafafa;
-  }
-  body:after {
-    content: 'tablet';
-    display:none;
-  }
-}
-
-/* Example styles */
-
 body {
   padding: 20px;
 }
@@ -72,4 +51,3 @@ li.selected > a {
   bottom: 0;
   opacity: 0;
 }
-

@@ -5,15 +5,44 @@
   <title>JQuery UL to SELECT</title>
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"/>
+  <link rel="stylesheet" href="//rawgit.com/carloscabo/MQBE/master/dist/mqbe.min.css">
   <link rel="stylesheet" href="application.css"/>
 
 </head>
 <body>
 
+  <div class="box">
+    <p>
+      <b>Sample 1</b><br>
+      This UL is converted automatically when you resize the browser's window below 768px width (and back when you resize to desktop), using <a href="https://github.com/carloscabo/MQBE" target="_blank">MQBE (Media Query Breakpoint Events)</a>
+    </p>
+    <ul class="convert-on-mobile">
+      <li><a href="/1">home</a></li>
+      <li><a href="/2">lorem ipsum</a></li>
+      <li class="active"><a href="/3">dolor sit amet</a></li>
+      <li><a href="/4">consectetur adipisicing elit</a></li>
+      <li><a href="/5">Accusamus a voluptatibus</a>
+        <ul>
+          <li><a href="/6">quaerat assumenda</a></li>
+          <li><a href="/7">tempore!</a></li>
+          <li>Error quo provident
+            <ul>
+              <li><a href="/8">Error quo provident</a></li>
+              <li><a href="/9">ut consectetur</a></li>
+              <li><a href="/10">ipsa?</a></li>
+            </ul>
+          </li>
+          <li><a href="/9">ut consectetur</a></li>
+        </ul>
+      </li>
+      <li><a href="/10">ipsa?</a></li>
+    </ul>
+
+  </div>
 
 <div class="box">
   <p>
-    <b>Sample 1</b><br>
+    <b>Sample 2</b><br>
     Complex nested UL list with <b>custom "on change" event</b> that ouputs a console.log
   </p>
   <ul class="u2s-fake-select sample-1" data-custom="sample-custom-data-to-be-copied">
@@ -46,7 +75,7 @@
 
 <div class="box">
   <p>
-    <b>Sample 2</b><br>
+    <b>Sample 3</b><br>
     With <b>custom wrapper</b> and <b>custom "active" class</b>
   </p>
   <ul class="u2s-fake-select sample-2">
@@ -70,7 +99,7 @@
 
 <div class="box">
   <p>
-    <b>Sample 3</b><br>
+    <b>Sample 4</b><br>
     Simple SELECT without wrapper
   </p>
   <ul class="u2s-fake-select sample-3" data-custom="sample-custom-data-copied">
@@ -90,46 +119,14 @@
   <a href="#" class="convert-sample-3">Convert UL to SELECT</a>
 </div>
 
-
-<div class="box">
-  <p>
-    <b>Sample 4</b><br>
-    This UL is converted automatically when you resize the browser's window below 768px width (and back when you resize to desktop), using <a href="https://github.com/carloscabo/MQBE" target="_blank">MQBE (Media Query Breakpoint Events)</a>
-  </p>
-  <ul class="convert-on-mobile">
-    <li><a href="/1">home</a></li>
-    <li><a href="/2">lorem ipsum</a></li>
-    <li class="active"><a href="/3">dolor sit amet</a></li>
-    <li><a href="/4">consectetur adipisicing elit</a></li>
-    <li><a href="/5">Accusamus a voluptatibus</a>
-      <ul>
-        <li><a href="/6">quaerat assumenda</a></li>
-        <li><a href="/7">tempore!</a></li>
-        <li>Error quo provident
-          <ul>
-            <li><a href="/8">Error quo provident</a></li>
-            <li><a href="/9">ut consectetur</a></li>
-            <li><a href="/10">ipsa?</a></li>
-          </ul>
-        </li>
-        <li><a href="/9">ut consectetur</a></li>
-      </ul>
-    </li>
-    <li><a href="/10">ipsa?</a></li>
-  </ul>
-
-</div>
-
-
 <div class="box wide">
   <p>
     <a href="#" class="restore-samples">Revert all samples to ULs</a>
   </p>
 </div>
 
-
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script  type="text/javascript" src="//rawgit.com/carloscabo/MQBE/master/public/jquery.mq_breakpoint_events.js" ></script>
+  <script type="text/javascript" src="//rawgit.com/carloscabo/MQBE/master/dist/mqbe.js" ></script>
   <script type="text/javascript" src="jquery.ul2select.js"></script>
   <script type="text/javascript" src="ready.js"></script>
 </body>
